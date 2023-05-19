@@ -23,9 +23,7 @@ namespace Core.Interface
 
     public class EvalCalcMOdel
     {
-        [Required]
-        [RegularExpression(@"\d*[*/+-\(\)√]*",
-         ErrorMessage = "Characters are not allowed.")]
+        [Required]        
         public string Expression { get; set; }
     }
 
