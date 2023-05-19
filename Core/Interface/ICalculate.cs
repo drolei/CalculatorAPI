@@ -9,7 +9,7 @@ namespace Core.Interface
 {
     public interface ICalculate
     {
-        EvalCalcViewModel Calculation(string expression)
+        EvalCalcViewModel Calculation(string expression);
     }
 
     public class SimpleCalcModel
