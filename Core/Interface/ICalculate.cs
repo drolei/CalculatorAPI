@@ -16,15 +16,21 @@ namespace Core.Interface
     {
         public double num { get; set; }
         public double num2 { get; set; }
-        [RegularExpression(@"[*/+-]",
-         ErrorMessage = "Characters are not allowed.")]
+
+        [RegularExpression(@"[+*/-]",
+         ErrorMessage = "Character is not allowed.")]
         public char sign { get; set; }
     }
 
     public class EvalCalcMOdel
     {
-        [Required]        
+
+
+        [Required]
+        [RegularExpression(@"\d*[+*-^\(\)√]*",
+         ErrorMessage = "Characters are not allowed.")]
         public string Expression { get; set; }
+
     }
 
     public class EvalCalcViewModel
