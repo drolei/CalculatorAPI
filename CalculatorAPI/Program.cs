@@ -1,4 +1,5 @@
 using Core.Interface;
+using org.mariuszgromada.math.mxparser;
 using Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+License.iConfirmNonCommercialUse("Dvar Raii");
 
 app.UseHttpsRedirection();
 

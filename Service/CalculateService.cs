@@ -20,9 +20,7 @@ namespace Service
 
         public EvalCalcViewModel Calculation(string expression)
         {
-            bool isCallSuccessful = License.iConfirmNonCommercialUse("Dvar Raii");
-            bool isConfirmed = License.checkIfUseTypeConfirmed();
-            String message = License.getUseTypeConfirmationMessage();
+                      
             double e = 0;
 
             Expression expressionClass = new Expression(expression);
